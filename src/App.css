@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f3f5f5;
+  color: #2e3333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 32px;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+p {
+  font-size: 19px;
+}
+
+.top-bar {
+  height: 60px;
+  border-bottom: 1px solid #e9ebeb;
+}
+
+.top-bar-center {
+  height: 100%;
   align-items: center;
+  margin: 0 auto;
+  width: 96vw;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  height: 70%;
+  object-fit: contain;
+  width: auto;
+}
+
+.infos-restos {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.infos-restos-center {
+  display: flex;
+  padding: 30px 0;
+  align-items: flex-start;
+  width: 96vw;
+  max-width: 1200px;
+}
+.infos-restos-text {
+  flex: 1 1;
+  margin-right: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.infos-restos-text h1 {
+  font-size: 2rem;
+  margin-top: 0.6rem;
+  margin-bottom: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.infos-restos-text p {
+  color: #868a8a;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.infos-restos-img {
+  width: 350px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #f3f5f5;
+}
+
+.content {
+  margin: 0 auto;
+  width: 96vw;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.menu {
+  flex: 1 1;
+  margin-right: 30px;
+  margin-top: 25px;
+  max-width: 850px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.meal {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.meal-card {
+  width: 50%;
+  min-width: 300px;
+  padding: 0 10px 25px;
+}
+
+.meal-infos {
+  border-radius: 5px;
+  height: 100%;
+  background: #fff;
+  padding: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+.meal-text {
+  flex: 1 1;
+  margin-right: 15px;
+}
+
+h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.meal-desc {
+  color: #808484;
+  font-size: 14px;
+  margin-bottom: 50px;
+  overflow: hidden;
+  height: 45px;
+  line-height: 20px;
+}
+.item-infos {
+  display: flex;
+  align-items: center;
+}
+
+.item-price {
+  color: #808484;
+  font-size: 1.1rem;
+}
+
+.item-popular {
+  color: #ff8000;
+  font-size: 0.8rem;
+  margin-left: 1rem;
+  font-weight: 800;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+
+.meal-picture {
+  height: 130px;
+  width: 130px;
+  border-radius: 5px;
+  /* overflow: hidden; */
+  object-fit: cover;
 }
