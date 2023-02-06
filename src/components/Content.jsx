@@ -5,7 +5,11 @@ const Content = ({ data }) => {
     <div className="content">
       <div className="menu">
         {data.categories.map((category, index) => {
-          if (index < 6) return <MenuItems key={index} category={category} />;
+          if (index < 6) {
+            return <MenuItems key={index} category={category} />;
+          } else {
+            return null;
+          }
         })}
       </div>
     </div>
